@@ -1,0 +1,10 @@
+Różnica między SRP i ISP polega na tym, że SRP mówi nam o tym za ile czynności odpowiada dany komponent.
+
+Twierdzi ona, że każda klasa powinna wykonywać dokładnie jedną czynność.
+Może być to złożona czynność, która wymaga wielu metod. Metod, które mogą być na tyle ogólne,
+że będą one wyabstrahowane do interfejsów. Interfejsów, które można w naturalny sposób połączyć i 
+otrzymać bardziej złożone kontrakty. Stąd dochodzimy do zakresu projektowania oprogramowania, 
+którego dotyczy ISP.
+
+ISP mówi nam, że klasa nie powinna implementować interfejsu, jeśli w pełni nie używa dostarczanej przez niego
+funkcjonalności. Nie ma mowy o tym, że interfejs powinien ograniczać się do czynności realizowanej przez klasę.

@@ -1,0 +1,11 @@
+Przykładem klasy łamiącej ISP może być klasa Array z języka C#.
+
+Implementuje ona interfejs IList, który wymaga implementacji następujących metod:
+
+Add, Clear, Contains, IndexOf, Insert, Remove, RemoveAt
+
+Implementacja IList.Add dla Array rzuca wyjątek NotSupportedException, który ma oznaczać, że wykonana operacja nie jest poprawna.
+Jest to bardzo jasnym naruszeniem zasady ISP. Skoro klasa Array nie używa całej funkcjonalności IList to nie powinna ona tego interfejsu implementować.
+
+Najbardziej oczywistym rozwiązaniem tego problemu byłoby utworzyć nieco bardziej ubogi interfejs, lub nawet każdą z metod opakować osobno w interfejs.
+Moglibyśmy wówczas tworzyć klasy, które bardzo w granularny sposób pozwalają definiować swoje zachowanie.

@@ -1,0 +1,3 @@
+Now logging to file!
+It should be working
+Cool!

@@ -1,0 +1,11 @@
+**/.idea/
+**/*.zip
+**/deklaracja.txt
+zestaw2/
+**/w*
+**/target/
+**/*.lock
+**/obj/
+**/bin/
+**/.vs/
+**/*.db
